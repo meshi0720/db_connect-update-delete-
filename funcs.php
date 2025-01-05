@@ -10,10 +10,10 @@ function h($stg) {
 //DBnameなど、今回の授業に合わせる。
 function db_conn(){
 try{
-    $db_name = 'meshi0720_schoolchoice_db';        // データベース名
-    $db_host = 'mysql3104.db.sakura.ne.jp';        // DBホスト
-    $db_id   = 'meshi0720_schoolchoice_db';        // ユーザー名
-    $db_pw   = 'schoolchoice1221';                 // パスワード
+    $db_name = '';        // データベース名
+    $db_host = '';        // DBホスト
+    $db_id   = '';        // ユーザー名
+    $db_pw   = '';                 // パスワード
     $pdo = new PDO('mysql:dbname=' . $db_name . ';charset=utf8;host=' . $db_host, $db_id, $db_pw);
     return $pdo;
 } catch (PDOException $e) {
